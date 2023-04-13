@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
-public class Fluxo {
+public class FluxoComTratamento {
     public static void main(String[] args) {
         System.out.println("Início do main");
 
@@ -25,7 +25,7 @@ public class Fluxo {
     private static void metodo2() {
         System.out.println("Início do metodo2");
 
-        ArithmeticException arithmeticException = new ArithmeticException();
+        ArithmeticException arithmeticException = new ArithmeticException("Deu errado");
         throw arithmeticException;
 
 //        System.out.println("Fim do metodo2");
