@@ -7,7 +7,7 @@ public class FluxoComTratamento {
 
         try {
             metodo1();
-        } catch (ArithmeticException | NullPointerException exception) {
+        } catch (ArithmeticException | NullPointerException | MinhaException exception) {
             System.out.println("Exceção capturada | " + exception.getMessage() + " | " + Arrays.stream(exception.getStackTrace()).collect(Collectors.toList()));
         }
 
@@ -25,9 +25,6 @@ public class FluxoComTratamento {
     private static void metodo2() {
         System.out.println("Início do metodo2");
 
-        ArithmeticException arithmeticException = new ArithmeticException("Deu errado");
-        throw arithmeticException;
-
-//        System.out.println("Fim do metodo2");
+        throw new MinhaException("Deu errado");
     }
 }
