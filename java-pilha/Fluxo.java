@@ -27,7 +27,5 @@ public class Fluxo {
 
         ArithmeticException arithmeticException = new ArithmeticException();
         throw arithmeticException;
-
-//        System.out.println("Fim do metodo2");
     }
 }
