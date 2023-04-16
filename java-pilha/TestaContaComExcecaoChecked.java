@@ -4,7 +4,7 @@ public class TestaContaComExcecaoChecked {
 
         try {
             c.deposita();
-        } catch(MinhaException e) {
+        } catch (MinhaException e) {
             System.out.println("Tratando.");
         }
     }

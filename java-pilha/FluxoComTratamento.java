@@ -19,7 +19,7 @@ public class FluxoComTratamento {
 
         try {
             metodo2();
-        } catch(MinhaException exception) {
+        } catch (MinhaException exception) {
 
         }
 
